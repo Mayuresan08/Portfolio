@@ -1,0 +1,17 @@
+.toggler{
+    background-color:#0F62FE !important;
+    }
+
+.navbtn{
+    transition: all 0.2s linear;
+    animation: rotate 4s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
