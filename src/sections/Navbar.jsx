@@ -29,24 +29,24 @@ z-index:1;
 
 const Button=styled.div`
 border-radius: 50%;
-color: grey;
+color: goldenrod !important;
 font-size: 1.3rem;
 transition:all 0.2s linear;
 ${small({display:"none"})}
 &:hover {
-     color:goldenrod !important;
+     color:grey !important;
      transform: scale(1.1);
     }
 `
 const Button1=styled.div`
 border-radius: 50%;
-color: grey;
+color: goldenrod !important;
 font-size: 1.3rem;
 transition:all 0.2s linear;
 display: none;
 ${small({display:"inline-block"})}
 &:hover {
-     color:goldenrod !important;
+     color:grey !important;
      transform: scale(1.1);
     }
 `
