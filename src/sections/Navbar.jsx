@@ -71,7 +71,7 @@ export default function TopNavbar() {
         <Image src={Logo}/>
         <Button1 className="btn navbtn" onClick={handleTheme} style={{borderRadius:"50%",color:"grey",fontSize:"1.4rem"}}>
         {
-            themeButton === "dark"? <BsFillMoonFill/>:<BsFillSunFill/>
+            themeButton === "light"? <BsFillMoonFill/>:<BsFillSunFill/>
         }
         </Button1>
         </Navbar.Brand>
@@ -92,7 +92,7 @@ export default function TopNavbar() {
         </Nav.Link>
         <Button className="btn navbtn" onClick={handleTheme} style={{borderRadius:"50%",color:"grey",fontSize:"1.4rem"}}>
         {
-            themeButton === "dark"? <BsFillMoonFill/>:<BsFillSunFill/>
+             themeButton === "light"? <BsFillMoonFill/>:<BsFillSunFill/>
         }
         </Button>
       </Nav>
