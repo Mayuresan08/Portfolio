@@ -26,7 +26,7 @@ export const NavLinks = styled(LinkS)`
 
 const MainDiv=styled.div`
 flex: 1;
-margin-top: 5rem;
+margin-top: 8rem;
 `
 
 const Container=styled.div`

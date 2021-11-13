@@ -18,7 +18,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-top: 4rem;
+margin-top: 9rem;
+margin-bottom: 2rem;
 ${large({marginTop:"9rem"})}
 ${medium({marginTop:"12rem"})}
 ${small({marginTop:"15rem"})}
