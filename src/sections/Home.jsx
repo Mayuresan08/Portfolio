@@ -12,21 +12,17 @@ const MainContainer=styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-height: 90vh;
+gap: 14rem;
 `
 export const NavLinks = styled(LinkS)`
     text-decoration: none;
     cursor: pointer;
     color: white;
 
-&:hover{
-    color: inherit;
-}
 `
 
 const MainDiv=styled.div`
 flex: 1;
-margin-top: 8rem;
 `
 
 const Container=styled.div`
@@ -35,8 +31,7 @@ padding: 10px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 100%;
-margin-top: 2rem;
+margin-top:3rem;
 text-align: center;
 `
 
@@ -87,7 +82,7 @@ export default function Home() {
                     />
                     </TContainer>
                     <SContainer>
-                        <button className="btn btn-success"><a style={{color:"inherit",textDecoration:"none"}} href={Resume} download="Mayuresan_Yokendran.pdf"><HiDocumentDownload style={{fontSize:"1.5rem"}}/>Resume</a></button>
+                        <button className="btn btn-success"><a style={{color:"inherit",textDecoration:"none"}} href={Resume} download><HiDocumentDownload style={{fontSize:"1.5rem"}}/>Resume</a></button>
                         <button className="btn btn-secondary mx-2"> <AiFillAppstore style={{fontSize:"1.5rem"}}/>
                         <NavLinks to='projects' spy={true} smooth={true}  duration={500}>Project</NavLinks>
                         </button>

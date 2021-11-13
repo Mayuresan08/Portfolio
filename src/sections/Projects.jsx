@@ -18,7 +18,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-top: 9rem;
+margin-top: 7rem;
 margin-bottom: 2rem;
 ${large({marginTop:"9rem"})}
 ${medium({marginTop:"12rem"})}
