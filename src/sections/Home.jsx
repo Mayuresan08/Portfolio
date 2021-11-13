@@ -6,6 +6,7 @@ import { HiDocumentDownload } from "react-icons/hi";
 import { AiFillAppstore } from "react-icons/ai";
 import Resume from "../assets/Mayuresan_Yokendran.pdf"
 import {Link as LinkS} from 'react-scroll' 
+import { small } from '../responsive';
 
 
 const MainContainer=styled.div`
@@ -13,6 +14,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 gap: 14rem;
+${small({gap:"7rem"})}
 `
 export const NavLinks = styled(LinkS)`
     text-decoration: none;
