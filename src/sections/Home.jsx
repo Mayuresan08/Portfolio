@@ -14,7 +14,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 gap: 9rem;
-${small({gap:"5rem"})}
+${small({gap:"2rem"})}
 `
 export const NavLinks = styled(LinkS)`
     text-decoration: none;
