@@ -14,7 +14,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 gap: 9rem;
-${small({gap:"7rem"})}
+${small({gap:"5rem"})}
 `
 export const NavLinks = styled(LinkS)`
     text-decoration: none;
@@ -35,6 +35,7 @@ justify-content: center;
 align-items: center;
 margin-top:9rem;
 text-align: center;
+${small({marginTop:"5rem"})}
 `
 
 const HeaderContainer=styled.div`
