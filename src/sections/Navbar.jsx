@@ -22,7 +22,7 @@ const BarNav=styled(Navbar)`
 background-color:${props => props.theme === "light" ? 'white' : 'rgba(26,32,44,255)'} !important; 
 color: #1919a5 !important;
 position: fixed;
-width:100%;
+width: 100vw;
 top:0;
 z-index:1;
 `

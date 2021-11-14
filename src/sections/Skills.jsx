@@ -33,6 +33,7 @@ margin: 1rem;
 display: flex;
 
 ${medium({display:"block"})}
+${small({display:"block",width:"100%"})}
 `
 const LeftContainer=styled.div`
 padding: 8px;
@@ -42,7 +43,7 @@ flex-direction: column;
 gap: 1.7rem;
 margin-top: 2rem;
 ${medium({width:"100%"})}
-${small({width:"100%"})}
+${small({width:"80%"})}
 
 `
 const RightContainer=styled.div`
@@ -53,7 +54,7 @@ flex-direction: column;
 gap: 1.7rem;
 margin-top: 2rem;
 ${medium({width:"100%"})}
-${small({width:"100%"})}
+${small({width:"80%"})}
 `
 const InputContainer=styled.div`
 background-color: 	#0275d8;
@@ -83,7 +84,7 @@ export default function Skills() {
             </HeaderContainer>
             <Container>
                 <InnerContainer>
-                    <LeftContainer data-aos="fade-up-right">
+                    <LeftContainer  data-aos="fade-down-right" data-aos-offset="100">
                         
                           {
                               leftArray.map((a)=>{
@@ -99,7 +100,7 @@ export default function Skills() {
                           }
                         
                     </LeftContainer>
-                    <RightContainer data-aos="fade-up-left">
+                    <RightContainer data-aos="fade-down-left" data-aos-offset="100" >
                     {
                               rightArray.map((a)=>{
                                 return(

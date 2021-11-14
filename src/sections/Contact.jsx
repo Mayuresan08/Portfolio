@@ -52,7 +52,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 gap: 1rem;
-width: 100%;
 `
 const Button=styled.button`
 ${small({width:"15rem"})}
