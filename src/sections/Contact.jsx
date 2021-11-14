@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { medium } from '../responsive';
 import { AiOutlineContacts,AiOutlineMail } from "react-icons/ai";
 import { FiSmartphone,FiMapPin } from "react-icons/fi";
-
+import { small } from '../responsive';
 const HeaderContainer=styled.div`
 display: flex;
 flex-direction: column;
@@ -52,9 +52,11 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 gap: 1rem;
-
+width: 100%;
 `
-
+const Button=styled.button`
+${small({width:"15rem"})}
+`
 export default function Contact() {
     return (
         <div id="contacts">
@@ -71,9 +73,9 @@ export default function Contact() {
                             <button className="btn btn-success" style={{fontSize:"1.7rem",marginRight:"4rem"}}><a style={{color:"inherit",textDecoration:"none"}} href="mailto:mayublade@gmail.com">Let's Discuss </a></button>
                         </Discuss>
                         <ContactContainer>
-                            <div ><button  className="btn btn-primary p-3"><AiOutlineMail/><a style={{color:"inherit",textDecoration:"none"}} href="mailto:mayublade@gmail.com">mayublade@gmail.com</a></button></div>
-                            <div ><button  className="btn btn-primary p-3"><FiSmartphone/><a style={{color:"inherit",textDecoration:"none"}} href="tel:+918870293627">+91-8870293637</a></button></div>
-                            <div ><button  className="btn btn-primary p-3"><FiMapPin/>Trichy,Tamilnadu</button></div>
+                            <div ><Button  className="btn btn-primary p-3"><AiOutlineMail/><a style={{color:"inherit",textDecoration:"none"}} href="mailto:mayublade@gmail.com">mayublade@gmail.com</a></Button></div>
+                            <div ><Button  className="btn btn-primary p-3"><FiSmartphone/><a style={{color:"inherit",textDecoration:"none"}} href="tel:+918870293627">+91-8870293637</a></Button></div>
+                            <div ><Button  className="btn btn-primary p-3"><FiMapPin/>Trichy,Tamilnadu</Button></div>
                         </ContactContainer>
                </InnerContainer>
             </Container>

@@ -41,8 +41,8 @@ display: flex;
 flex-direction: column;
 gap: 1.7rem;
 margin-top: 2rem;
-${medium({width:"80%"})}
-${small({width:"70%"})}
+${medium({width:"100%"})}
+${small({width:"100%"})}
 
 `
 const RightContainer=styled.div`
@@ -52,8 +52,8 @@ display: flex;
 flex-direction: column;
 gap: 1.7rem;
 margin-top: 2rem;
-${medium({width:"80%"})}
-${small({width:"70%"})}
+${medium({width:"100%"})}
+${small({width:"100%"})}
 `
 const InputContainer=styled.div`
 background-color: 	#0275d8;
