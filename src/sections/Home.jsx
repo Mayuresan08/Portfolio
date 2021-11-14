@@ -56,6 +56,7 @@ color:#0275d8;
 
 export default function Home() {
     const [index, setIndex] = React.useState(0);
+    const [tool,setTool]=React.useState(true)
     const TEXTS = [
         "React",
         "NodeJs",
@@ -63,12 +64,17 @@ export default function Home() {
         "Express",
         "AWS"
       ];
+      const hideTool=()=>{
+        setTimeout(()=>setTool(false),3000)
+      }
     React.useEffect(() => {
+      hideTool()
       const intervalId = setInterval(() =>
         setIndex(index => index + 1),
         1500 
       );
       return () => clearTimeout(intervalId);
+      
     }, []);
     return (
         <div id="home">

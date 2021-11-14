@@ -2,7 +2,7 @@ import React,{useState,useContext} from 'react'
 import { ThemeContext } from '../context'
 import { Navbar,Container,Nav } from 'react-bootstrap'
 import Logo from "../assets/mayuLogo1.PNG"
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import "./Navbar.css"
 import { BsFillSunFill,BsFillMoonFill } from "react-icons/bs";
 import {Link as LinkS} from 'react-scroll' 
@@ -32,12 +32,36 @@ border-radius: 50%;
 color: goldenrod !important;
 font-size: 1.3rem;
 transition:all 0.2s linear;
+position: relative;
 ${small({display:"none"})}
 &:hover {
      color:grey !important;
      transform: scale(1.1);
     }
 `
+const up=keyframes`
+0%   {transform:translateX(40px)}
+
+  100% {transform:translateX(0)}
+`
+
+const Tool=styled.div`
+width: 10rem;
+
+position: absolute;
+padding:2px;
+background-color: white;
+right:1rem;
+font-size: 0.8rem;
+display: flex;
+justify-content: center;
+border-radius:5px;
+align-items: center;
+transition: all 0.2s linear;
+animation: ${up} 2s linear;
+
+`
+
 const Button1=styled.div`
 border-radius: 50%;
 color: goldenrod !important;
@@ -53,6 +77,8 @@ ${small({display:"inline-block"})}
 export default function TopNavbar() {
     const [themeButton,setThemeButton]=useState("dark")
     const {theme,changeTheme}=useContext(ThemeContext)
+    const [tool,setTool]=React.useState(true)
+
     console.log(theme)
 
     const handleTheme=()=>{
@@ -62,7 +88,13 @@ export default function TopNavbar() {
       if(themeButton==="dark")  setThemeButton("light")
       else setThemeButton("dark")
     }
-
+    const hideTool=()=>{
+      setTimeout(()=>setTool(false),3000)
+    }
+  React.useEffect(() => {
+    hideTool()
+    
+  }, []);
     return (
         <div>
             <BarNav theme={theme}  expand="lg">
@@ -90,11 +122,16 @@ export default function TopNavbar() {
         <Nav.Link className="text-primary " href="#home">
         <NavLinks to='contacts' spy={true} smooth={true} duration={500}>Contact</NavLinks>
         </Nav.Link>
+        <div>
         <Button className="btn navbtn" onClick={handleTheme} style={{borderRadius:"50%",color:"grey",fontSize:"1.4rem"}}>
         {
              themeButton === "light"? <BsFillMoonFill/>:<BsFillSunFill/>
         }
         </Button>
+        { tool &&
+        <Tool>Click icon to change theme</Tool>
+          }
+        </div>
       </Nav>
     </Navbar.Collapse>
   </Container>
