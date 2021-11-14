@@ -13,7 +13,7 @@ const MainContainer=styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-gap: 14rem;
+gap: 9rem;
 ${small({gap:"7rem"})}
 `
 export const NavLinks = styled(LinkS)`
@@ -33,7 +33,7 @@ padding: 10px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-top:3rem;
+margin-top:9rem;
 text-align: center;
 `
 
