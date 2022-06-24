@@ -4,7 +4,7 @@ import Wave from 'react-wavify'
 import TextTransition, { presets } from "react-text-transition";
 import { HiDocumentDownload } from "react-icons/hi";
 import { AiFillAppstore } from "react-icons/ai";
-import Resume from "../assets/Mayuresan_Yokendran.pdf"
+import Resume from "../assets/Mayuresan.pdf"
 import {Link as LinkS} from 'react-scroll' 
 import { small } from '../responsive';
 
